@@ -1,0 +1,123 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Main Container */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Section Headings */
+h3 {
+    margin: 25px 0 15px;
+    font-size: 20px;
+    color: #ffd369;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 5px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Inputs & Select */
+input[type="number"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0 0 2px #ffd369;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffd369, #ffb703);
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(255, 179, 3, 0.4);
+}
+
+/* Prediction Result */
+h2:nth-of-type(2) {
+    margin-top: 20px;
+    color: #00ffab;
+}
+
+/* Divider */
+hr {
+    max-width: 700px;
+    
+    margin: 40px auto;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Batch Prediction Section */
+form[action="/batch_predict"] {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
