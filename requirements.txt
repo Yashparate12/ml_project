@@ -4,4 +4,10 @@ pandas
 scikit-learn
 joblib
 xgboost
+sqlalchemy
+pymysql
+pyyaml
+flask
+notebook
+python-dotenv
 gunicorn
